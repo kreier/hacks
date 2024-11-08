@@ -66,7 +66,7 @@ With systemd we can reload the unit and restart ollama:
 > sudo systemctl start ollama
 ```
 
-After that I can use the RX6600 without problems. Let's see if that works for the older RX 470 too.
+After that I can use the RX6600 without problems, since its LLVM target is `gfx1032` and close to the overwritten `gfx1030`. Even the older `gfx900` of the Vega 56 would work. But my RX 470 is `gfx803`. Accordingly in ollama it is reported `amd_linux.go:305 msg="amdgpu too old gfx803" gpu=0`. I need to upgrade.
 
 ## Markdown 
 
