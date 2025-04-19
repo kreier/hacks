@@ -1,5 +1,8 @@
 # Hacks
 
+![GitHub Release](https://img.shields.io/github/v/release/kreier/hacks)
+![GitHub License](https://img.shields.io/github/license/kreier/hacks)
+
 A few hacks I keep search the web way too often.
 
 - [Write protected disks and diskpart](#write-protected-disks-and-diskpart)
