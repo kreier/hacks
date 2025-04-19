@@ -2,6 +2,12 @@
 
 A few hacks I keep search the web way too often.
 
+- [Write protected disks and diskpart](#write-protected-disks-and-diskpart)
+- [Lower power consumption](#lower-power-consumption)
+- [Run ollama on RX 6600 and RX 470](#run-ollama-on-rx-6600-and-rx-470)
+- [Markdown](#markdown)
+- [Deactivate GUI](#deactivate-gui-on-ubuntu)
+
 ## Write protected disks and diskpart
 
 List disks, partitions and volumes. And select them once diskpart is started.
@@ -72,4 +78,16 @@ After that I can use the RX6600 without problems, since its LLVM target is `gfx1
 
 To create a table use this online tool: [https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
 
-Other hacks: https://github.com/im-luka/markdown-cheatsheet
+Other hacks: [https://github.com/im-luka/markdown-cheatsheet](https://github.com/im-luka/markdown-cheatsheet)
+
+## Deactivate GUI on Ubuntu
+
+``` sh
+sudo systemctl set-default multi-user.target
+```
+
+And revert with
+
+``` sh
+sudo systemctl set-default graphical.target
+```
